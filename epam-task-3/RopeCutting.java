@@ -1,16 +1,11 @@
-/* IMPORTANT: Multiple classes and nested static classes are supported */
+/* 
+problem link:
+https://www.hackerearth.com/problem/algorithm/rod-cutting-problem-7/
 
-/*
- * uncomment this if you want to read input.
-//imports for BufferedReader
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-//import for Scanner and other utility classes
-import java.util.*;
+solution: 
+solved using bit manipulation. If number having all 1's in it's binary representation,
+then this number  will come under 2nd case, so increment counter for only those numbers
 */
-
-// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
 
 //imports for BufferedReader
 import java.io.BufferedReader;
@@ -22,28 +17,9 @@ import java.util.*;
 
 class RopeCutting {
     public static void main(String args[] ) throws Exception {
-        /* Sample code to perform I/O:
-         * Use either of these methods for input
-
-        //BufferedReader
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String name = br.readLine();                // Reading input from STDIN
-        System.out.println("Hi, " + name + ".");    // Writing output to STDOUT
-
-        //Scanner
-        Scanner s = new Scanner(System.in);
-        String name = s.nextLine();                 // Reading input from STDIN
-        System.out.println("Hi, " + name + ".");    // Writing output to STDOUT
-
-        */
         
-        // Write your code here
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine());
-        
-        // set to store partial results
-        Set<Integer> st = new HashSet<Integer>();
-        Set<Integer> sto = new HashSet<Integer>();
         
         while((t--) > 0){
             int l = Integer.parseInt(br.readLine());
@@ -55,6 +31,7 @@ class RopeCutting {
             if(!binary.contains("0")){
                    count++;
             }
+            
             int len = binary.length() - 2;
            
             System.out.println(count+len);
