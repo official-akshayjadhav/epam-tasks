@@ -1,4 +1,8 @@
-/* IMPORTANT: Multiple classes and nested static classes are supported */
+/* 
+problem link: https://www.hackerearth.com/problem/algorithm/rod-cutting-problem-7/
+
+
+IMPORTANT: Multiple classes and nested static classes are supported */
 
 /*
  * uncomment this if you want to read input.
