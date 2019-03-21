@@ -47,8 +47,8 @@ class TestClass {
                 data.put(w, al);
             }
         }
-
-        // to store only keys list
+        
+        // to store only keys list.
         Set<Integer> keys = data.keySet();
 
         // convert set of keys into array
