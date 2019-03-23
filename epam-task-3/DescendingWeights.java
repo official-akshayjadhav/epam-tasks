@@ -1,3 +1,8 @@
+/*
+* problem
+* link: https://www.hackerearth.com/practice/algorithms/sorting/bucket-sort/practice-problems/algorithm/sort-the-array-5/
+*/
+
 //import for Scanner and other utility classes
 import java.util.*;
 
@@ -42,8 +47,8 @@ class TestClass {
                 data.put(w, al);
             }
         }
-
-        // to store only keys list
+        
+        // to store only keys list.
         Set<Integer> keys = data.keySet();
 
         // convert set of keys into array
