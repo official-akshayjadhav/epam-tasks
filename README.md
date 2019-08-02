@@ -1,2 +1,2 @@
 # epam-tasks
-all tasks related to epam PET
+all tasks related to epam PEP
